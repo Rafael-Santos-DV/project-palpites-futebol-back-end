@@ -19,4 +19,4 @@ app.use(express.json());
 app.use(require("./routes/routes"));
 
 
-app.listen(3001);
+app.listen(process.env.PORT || 3000);
