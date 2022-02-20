@@ -16,7 +16,6 @@ mongoose.connect(process.env.URL_MONGODB, error => {
 app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
-
 app.use(require("./routes/routes"));
 
 
