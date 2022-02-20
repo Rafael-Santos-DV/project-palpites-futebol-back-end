@@ -14,7 +14,7 @@ mongoose.connect(process.env.URL_MONGODB, error => {
 })
 
 app.use(morgan("dev"));
-app.use(cors({ origin: "https://xenodochial-curran-3baef9.netlify.app" }));
+app.use(cors({ origin: "http://xenodochial-curran-3baef9.netlify.app" }));
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "https://xenodochial-curran-3baef9.netlify.app");
