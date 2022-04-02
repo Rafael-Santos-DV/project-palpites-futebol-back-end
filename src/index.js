@@ -16,7 +16,7 @@ mongoose.connect(process.env.URL_MONGODB, error => {
 app.use(morgan("dev"));
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "https://xenodochial-curran-3baef9.netlify.app");
+    res.header("Access-Control-Allow-Origin", "https://palpites-futebol.netlify.app");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     app.use(cors({ origin: "https://palpites-futebol.netlify.app" }));
     next();
